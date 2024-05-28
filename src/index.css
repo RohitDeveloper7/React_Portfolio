@@ -1,0 +1,86 @@
+/* @import "bootstrap/scss/bootstrap"; */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    box-sizing: border-box;
+    color: var(rgb(2, 131, 2));
+}
+.navbar{
+    height: 60px;
+    
+}
+.nav-item li {
+    margin-left: 1.7rem;
+    cursor: pointer;
+  }
+.home{
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+.home .img{
+    /* mix-blend-mode:multiply; */
+    /* mix-blend-mode:screen; */
+    width: 400px;
+    height: 400px;
+    object-position: top;
+    object-fit: cover;
+    filter: drop-shadow(0 0 50px black);
+}
+
+.home h1,h4,p{
+    position: relative;
+        opacity: 0; /* Initially invisible */
+        animation: slideFromTop 2s ease forwards;   
+}
+
+@keyframes slideFromTop {
+    0% {
+        top: -500px; /* Start position */
+        opacity: 0;
+    }
+    100% {
+        top: 0; /* End position */
+        opacity: 1;
+    }
+}
+
+ .logo span i {
+    padding: 15px;
+    border: 2px solid green;
+    border-radius: 50px;
+    color: green;
+    cursor: pointer;
+}
+ .logo span i:hover,.btn:hover{
+   background-color: rgb(2, 131, 2);
+   box-shadow: 0 0 30px rgba(40, 246, 143, 0.5); /* Adjust shadow color and strength as needed */
+   color: white;
+}
+
+.footer{
+    height: 60px;
+    padding-top: 20px;
+}
+
+.footer .logo span i{
+    padding: 5px;
+    border: none;
+}
+
+.about .img{
+    /* mix-blend-mode:multiply; */
+    border: 5px solid rgb(9, 202, 255);
+    width: 450px;
+    height: 350px;
+    object-position: top;
+    object-fit: cover;
+}
+
+.spinner-border, .spinner-grow {
+    --bs-spinner-animation-speed: 1.5s;
+    width: 100px;
+    height: 100px;
+}
